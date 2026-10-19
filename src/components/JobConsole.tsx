@@ -26,7 +26,7 @@ export function JobConsole() {
       <div className="mb-4 flex items-center justify-between">
         <div className="flex items-center gap-2 text-sm font-medium text-zinc-300">
           <Terminal className="h-4 w-4 text-purple-400" />
-          <span>REAL-TIME JOB DISPATCH & LOGS</span>
+          <span>Real-time Dispatch and Logs</span>
         </div>
       </div>
 

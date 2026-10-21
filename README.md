@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# data-ops-dashboard
+
+A modern, high-contrast operational plane UI built to monitor distributed stream health, track web scraper telemetry, and inspect schema drift metrics in real time.
+
+Built with **Next.js 15(App Router)** for server-driven rendering and **Tailwind CSS** styled in a custom **Modern Noir** aesthetic, `data-ops-dashboard` provides system operators with real-time visibility into distributed crawler workloads, DuckDB telemetry logs, and pipeline execution controls.
+
+---
+
+## Features
+
+- **Modern Noir Aesthetic:** High-contrat dark theme featuring electric purple and gold accents, crisps borders, and zero UI bloat.
+- **Real-Time Telemetry Cards:** Displays ingestion throughput, HTTP response distributions, worker health, and stream latency metrics.
+- **Contract Inspection Panel:** Visualizes active data contracts, schema validation breaches, and drift event history.
+- **Control Plane Actions:** Interface controls to trigger scraper retries, pause stream consumption, or query DuckDB metrics.
+- **Responsive Next.js 15 App Router:** Clean client/server component separation optimized for desktop workstations and mobile views.
+
+--- 
+
+## Tech Stack
+
+- **Framework:** [Next.js 15](https://nextjs.org/) (App Router)
+- **UI Library:** [React 19](https://react.dev/)
+- **Language:** [Typescript](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Package Manager:** `npm` / `pnpm`
+
+---
+
+## Project Structure
+
+```text
+data-ops-dashboard/
+├── app/
+│   ├── layout.tsx         # Root layout with Modern Noir theme
+│   ├── page.tsx           # Primary control plane dashboard
+│   ├── metrics/          # Telemetry failure logs & analytics route
+│   └── api/               # Proxy API routes to backend services
+├── components/            # Reusable UI cards, tables, and badge components
+├── public/                # Static assets & icons
+├── package.json           # Node dependencies & scripts
+├── tailwind.config.ts     # Modern Noir design tokens & color palette
+├── .env.example           # Dashboard configuration template
+├── .gitignore             # Git ignore configurations
+└── README.md              # Documentation
+```
 
 ## Getting Started
 
-First, run the development server:
+1. ### Prerequisites
+Ensure you have Node.js 18.18+ and `npm` installed on your machine.
+
+2. ### Clone the Repository
+
+```bash
+git clone [https://github.com/BenWam254/data-ops-dashboard.git](https://github.com/BenWam254/data-ops-dashboard.git)
+cd data-ops-dashboard
+```
+
+3. ### Environment Setup
+Create an `.env.local` file in the root directory:
+
+```bash
+cp .env.example .env.local
+```
+
+4. ### Install Dependencies
+
+```bash
+npm install
+```
+
+5. ### Development Server
+Start the local development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser to explore the operational control plane.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+Distributed under the MIT License. See `LICENSE` for more information.

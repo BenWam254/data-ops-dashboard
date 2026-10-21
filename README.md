@@ -1,5 +1,11 @@
 # data-ops-dashboard
 
+[![CI Pipeline](https://github.com/BenWam254/data-ops-dashboard/actions/workflows/ci.yml/badge.svg)](https://github.com/BenWam254/data-ops-dashboard/actions)
+[![Next.js](https://img.shields.io/badge/Next.js-15-black.svg)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue.svg)](https://www.typescriptlang.org/)
+[![Package Manager](https://img.shields.io/badge/managed%20by-npm-red.svg)](https://www.npmjs.com/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
 A modern, high-contrast operational plane UI built to monitor distributed stream health, track web scraper telemetry, and inspect schema drift metrics in real time.
 
 Built with **Next.js 15(App Router)** for server-driven rendering and **Tailwind CSS** styled in a custom **Modern Noir** aesthetic, `data-ops-dashboard` provides system operators with real-time visibility into distributed crawler workloads, DuckDB telemetry logs, and pipeline execution controls.
